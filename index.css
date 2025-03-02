@@ -57,4 +57,15 @@ h1{
     transform: translate(30%, 0%);
     width: fit-content;
     height:fit-content;
+    transition:1s;
+}
+
+#noButton:hover{
+    opacity:80%;
+    transition:1s;
+}
+
+#noButton:active{
+    opacity:70%;
+    transition:1s;
 }

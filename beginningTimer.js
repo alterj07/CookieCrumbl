@@ -3,9 +3,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 });
 
 function beginningTimer() {
-    console.log("Timer started");
+    document.getElementById('cookiePopUp').style.display = 'none';
     setTimeout(function() {
-        console.log("Waited for 3 seconds");
-        alert("HELLOO FELLOW HUMAN");
+        document.getElementById('cookiePopUp').style.display = 'block';
     }, 3000);
 }
