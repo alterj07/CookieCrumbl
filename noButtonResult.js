@@ -11,23 +11,24 @@ function noButtonResult() {
     newButton3.id = "yesButton";
     newButton4.id = "yesButton";
 
+    newButton1.className = "button";
+    newButton2.className = "button";
+    newButton3.className = "button";
+    newButton4.className = "button";
+
     newButton1.textContent = "Yes";
     newButton2.textContent = "Yes";
     newButton3.textContent = "Yes";
     newButton4.textContent = "Yes";
 
-    // newButton1.addEventListener('click', yesButtonResult);
-    // newButton2.addEventListener('click', yesButtonResult);
-    // newButton3.addEventListener('click', yesButtonResult);
-    // newButton4.addEventListener('click', yesButtonResult);
 
     document.body.appendChild(newButton1);
     document.body.appendChild(newButton2);
     document.body.appendChild(newButton3);
     document.body.appendChild(newButton4);
 
-    const maxHeight = window.screen.height;
-    const maxWidth = window.screen.width;
+    const maxHeight = window.innerHeight;
+    const maxWidth = window.innerWidth;
 
     let randomX = Math.floor(Math.random() * maxWidth);
     let randomY = Math.floor(Math.random() * maxHeight);
@@ -65,4 +66,11 @@ function noButtonResult() {
     newButton4.style.left = randomX + 'px';
     newButton4.style.top = randomY + 'px';
     newButton4.style.fontSize = randomSize + 'px';
+
+
+
+    newButton1.addEventListener('click', yesButtonResult);
+    newButton2.addEventListener('click', yesButtonResult);
+    newButton3.addEventListener('click', yesButtonResult);
+    newButton4.addEventListener('click', yesButtonResult);
 }
