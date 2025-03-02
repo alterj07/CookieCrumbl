@@ -1,0 +1,9 @@
+#cap2{
+    border-style: solid;
+    border-radius: 10px;
+    text-align:center;
+    background-color: gray;
+}
+#captchaimg2{
+    width:500px;
+}
