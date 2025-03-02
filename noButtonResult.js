@@ -27,7 +27,7 @@ function noButtonResult() {
     document.body.appendChild(newButton3);
     document.body.appendChild(newButton4);
 
-    const maxHeight = window.innerHeight;
+    const maxHeight = document.documentElement.scrollHeight;
     const maxWidth = window.innerWidth;
 
     let randomX = Math.floor(Math.random() * maxWidth);
