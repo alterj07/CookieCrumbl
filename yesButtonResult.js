@@ -6,4 +6,4 @@ function yesButtonResult() {
     }
     const container = document.getElementById('cookiePopUp');
     container.remove();
-}
+} 
