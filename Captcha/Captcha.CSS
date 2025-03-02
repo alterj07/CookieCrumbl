@@ -2,8 +2,11 @@
     border-style: solid;
     border-radius: 10px;
     text-align:center;
-    background-color: gray;
+    background-color: rgb(155, 141, 141);
 }
 #captchaimg2{
     width:500px;
+}
+body{
+    background-color:#f26419
 }

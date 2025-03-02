@@ -1,5 +1,5 @@
 const passwords = ["Td4eva","overlooks","I4n m4dd3n","R3d 40","Sam I Am","Y33 H4w","Teal Eel","Birb Runner","Scrap Yard"]
-
+let colorArr = ["#f26419","#FF0000","#f4acb7","R3d 40","#0b6e4f","#133e8e","#5fa8d3","#1d1d1d","Scrap Yard"]
 let typed; 
 
 
@@ -13,6 +13,12 @@ document.getElementById("submit").onclick = function(){
     console.log(typed);
     console.log(cpass);
     if(typed == cpass){
-        img.src = (number+1)+".png"
+        document.getElementById("cap2").innerHTML = "Captcha" + " " + (number+1);
+        img.src = (number+1)+".png";
+        let colorThing = colorArr[number];
+        let bodyBg = document.getElementById("bodycolor").style="background-color:"+colorThing;
+        console.log(bodyBg);
+        console.log("colorthing is" + colorThing);
+        bodyBg.style.color=colorThing;
     }
 }
