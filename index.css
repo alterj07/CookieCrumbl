@@ -12,6 +12,10 @@ h1{
     margin:auto;
 }
 
+.highlight{
+    color: limegreen;
+}
+
 #cookiePopUp{
     position: absolute;
     top: 50%;
