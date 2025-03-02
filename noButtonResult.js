@@ -67,10 +67,14 @@ function noButtonResult() {
     newButton4.style.top = randomY + 'px';
     newButton4.style.fontSize = randomSize + 'px';
 
+    function clickFunctions() {
+        yesButtonResult();
+        showCaptcha();
+    }
 
 
-    newButton1.addEventListener('click', yesButtonResult);
-    newButton2.addEventListener('click', yesButtonResult);
-    newButton3.addEventListener('click', yesButtonResult);
-    newButton4.addEventListener('click', yesButtonResult);
+    newButton1.addEventListener('click', clickFunctions);
+    newButton2.addEventListener('click', clickFunctions);
+    newButton3.addEventListener('click', clickFunctions);
+    newButton4.addEventListener('click', clickFunctions);
 }
