@@ -1,11 +1,12 @@
 body{
-    background-color: black;
+    background-color: white;
     color:aliceblue;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 h1{
+    color: black;
     text-align:center;
     margin:auto;
 }
@@ -17,15 +18,15 @@ h1{
     transform: translate(-50%, -50%);
     width: fit-content;
     height:fit-content;
-    background-color: white; 
+    background-color: black; 
     padding-top:9%;
     padding-bottom:9%;
-    padding-left:15%;
-    padding-right:15%;
-    color:black;
+    padding-left:10%;
+    padding-right:10%;
+    color:white;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:1.5em;
-    border-radius:3%;
+    border-radius: 3%;
 }
 
 #yesButton{
@@ -68,4 +69,10 @@ h1{
 #noButton:active{
     opacity:70%;
     transition:1s;
+}
+
+#CTC {
+color: black;
+margin-right: 25%;
+margin-left: 25%;
 }
